@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "80548417207",
+    "project_id": "vicadsfirebase",
+    "storage_bucket": "vicadsfirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:80548417207:android:4a50337d1add484d5e0732",
+        "android_client_info": {
+          "package_name": "com.ads.application.vicads"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "80548417207-okuel0e9v3pf6gnbh9cspv2icrj07jvc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1GjLkKfmSAuG6j7lZ5DGDjBjg0kT-I1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "80548417207-okuel0e9v3pf6gnbh9cspv2icrj07jvc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

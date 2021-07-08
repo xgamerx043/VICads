@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+ <item android:id="@+id/etapa1"
+     android:title="Amigo"/>
+
+    <item android:id="@+id/etapa2"
+        android:title="Servidor"/>
+
+    <item android:id="@+id/etapa3"
+        android:title="Solidario"/>
+
+    <item android:id="@+id/etapa4"
+        android:title="Animador"/>
+</menu>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:background="#A7CEF4">
+
+    <ImageView
+        android:id="@+id/imageV1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/adssiemprealegres" />
+
+    <TextView
+        android:id="@+id/textV1_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textV1_1"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="@color/purple_700"
+        android:fontFamily="@font/cantora_one"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textF1"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:hint="Correo"
+                app:hintTextColor="@color/black"
+                app:startIconContentDescription="correo"
+                app:startIconDrawable="@drawable/ic_email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textE1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textF2"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:hint="Contraseña"
+                app:endIconMode="password_toggle"
+                app:hintTextColor="@color/black"
+                app:startIconContentDescription="contraseña"
+                app:startIconDrawable="@drawable/ic_lock">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textE2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textF3"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:hint="Confirmar contraseña"
+                app:endIconMode="password_toggle"
+                app:hintTextColor="@color/black"
+                app:startIconContentDescription="contraseña"
+                app:startIconDrawable="@drawable/ic_lock">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textE3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textF4"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:hint="Telefono"
+                app:hintTextColor="@color/black"
+                app:startIconContentDescription="Telefono"
+                app:startIconDrawable="@drawable/ic_phone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textE4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textF5"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:hint="Nombre(s)"
+                app:hintTextColor="@color/black"
+                app:startIconContentDescription="Nombres"
+                app:startIconDrawable="@drawable/ic_person">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textE5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textF7"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:hint="Apellido(s)"
+                app:hintTextColor="@color/black"
+                app:startIconContentDescription="Apellidos"
+                app:startIconDrawable="@drawable/ic_person">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textE7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textF6"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                app:endIconMode="dropdown_menu"
+                app:helperText="Etapa"
+                app:helperTextEnabled="true"
+                app:hintTextColor="@color/black"
+                app:startIconContentDescription="Etapa"
+                app:startIconDrawable="@drawable/ic_person">
+
+                <AutoCompleteTextView
+                    android:id="@+id/Etapas_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textF8"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:hint="Cumpleaños"
+                app:helperText="DD/MM/AA"
+                app:helperTextEnabled="true"
+                app:hintTextColor="@color/black"
+                app:startIconContentDescription="Cumpleaños"
+                app:startIconDrawable="@drawable/ic_calendar">
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <EditText
+                android:id="@+id/textV8_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/border_text"
+                android:drawableStart="@drawable/ic_person"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/cantora_one"
+                android:hint="@string/textV8_2"
+                android:letterSpacing="0.1"
+                android:padding="20dp"
+                android:textColorHint="#DA0404"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/text9_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/border_text"
+                android:drawableStart="@drawable/ic_person"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/cantora_one"
+                android:hint="@string/textV9_2"
+                android:letterSpacing="0.1"
+                android:padding="20dp"
+                android:textColorHint="#DA0404"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/text11_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/border_text"
+                android:drawableStart="@drawable/ic_person"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/cantora_one"
+                android:hint="@string/textV10_2"
+                android:letterSpacing="0.1"
+                android:padding="20dp"
+                android:textColorHint="#DA0404"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/text12_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/border_text"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/cantora_one"
+                android:hint="@string/textV12_2"
+                android:inputType="phone"
+                android:letterSpacing="0.1"
+                android:padding="20dp"
+                android:textColorHint="#DA0404"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/text10_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/border_text"
+                android:drawableStart="@drawable/ic_person"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/cantora_one"
+                android:hint="@string/textV11_2"
+                android:letterSpacing="0.1"
+                android:padding="20dp"
+                android:textColorHint="#DA0404"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/text13_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/border_text"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/cantora_one"
+                android:hint="@string/textV13_2"
+                android:inputType="phone"
+                android:letterSpacing="0.1"
+                android:padding="20dp"
+                android:textColorHint="#DA0404"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Button_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/border_button"
+                android:text="@string/Button2"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

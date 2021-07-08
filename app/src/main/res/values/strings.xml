@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">VICads</string>
+    <string name="textV1">Cargando tu Alegria</string>
+    <string name="textV2">Bienvenido a VICads</string>
+    <string name="textV3">INICIA SESION</string>
+    <string name="textV4">Correo:</string>
+    <string name="textV5">Contraseña:</string>
+    <string name="Button1">INICIO</string>
+    <string name="textV6">¿OLVIDASTE TU CONTRASEÑA?</string>
+    <string name="textV7">¿ERES NUEVO?, registrate</string>
+    <string name="textV1_1">REGISTRATE</string>
+    <string name="textV2_1">Confirmar Contraseña:</string>
+    <string name="textV3_1">Numero de telefono:</string>
+    <string name="textV4_1">SIGUIENTE</string>
+    <string name="textV5_2">Continua Registrandote</string>
+    <string name="textV6_2">Nombre(s):</string>
+    <string name="textV7_2">Apellido(s):</string>
+    <string name="textV8_2">Fecha de nacimiento:</string>
+    <string name="textV9_2">Etapa:</string>
+    <string name="textV10_2">Nombre de papá:</string>
+    <string name="textV12_2">Número de papá:</string>
+    <string name="textV11_2">Nombre de mamá:</string>
+    <string name="textV13_2">Número de mamá:</string>
+    <string name="Button2">REGISTRARSE</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    
+    <string-array name="Etapas_array">
+        <item>Amigo</item>
+        <item>Servidor</item>
+        <item>Solidario</item>
+        <item>Animador</item>
+    </string-array>
+</resources>
