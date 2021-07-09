@@ -1,6 +1,7 @@
 package com.ads.application.vicads;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.database.sqlite.SQLiteBindOrColumnIndexOutOfRangeException;
@@ -19,12 +20,14 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.datepicker.MaterialDatePicker;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.Calendar;
+import java.util.Date;
 import java.util.regex.Pattern;
 
 public class SignUpActivity extends Activity {
@@ -34,11 +37,9 @@ public class SignUpActivity extends Activity {
     TextView textV1_1;
     EditText textV8_2, text9_2, text11_2, text12_2, text10_2, text13_2;
     Button Button_2;
-   TextInputLayout textF1, textF2, textF3, textF4, textF5, textF7, textE8;
-   TextInputEditText textE1, textE2, textE3, textE4, textE5, textE7, textF8;
-   AutoCompleteTextView Etapas_list;
-   DatePickerDialog.OnDateSetListener setListener;
-
+    TextInputLayout textF1, textF2, textF3, textF4, textF5, textF7, textE8;
+    TextInputEditText textE1, textE2, textE3, textE4, textE5, textE7, textF8;
+    AutoCompleteTextView Etapas_list;
 
     //Metodo de Firebase para la autenticacion de usuarios
     private FirebaseAuth mAuth;
@@ -48,6 +49,7 @@ public class SignUpActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
+
 
         imageV1 = findViewById(R.id.imageV1);
         textV1_1 = findViewById(R.id.textV1_1);
@@ -64,13 +66,14 @@ public class SignUpActivity extends Activity {
         textF4 = findViewById(R.id.textF4);
         textF5 = findViewById(R.id.textF5);
         textF7 = findViewById(R.id.textF7);
-        textF8 = findViewById(R.id.textF8);
+       // textF8 = findViewById(R.id.textF8);
         textE1 = findViewById(R.id.textE1);
         textE2 = findViewById(R.id.textE2);
         textE3 = findViewById(R.id.textE3);
         textE4 = findViewById(R.id.textE4);
         textE5 = findViewById(R.id.textE5);
         textE7 = findViewById(R.id.textE7);
+        //textE8 = findViewById(R.id.textE8);
         Etapas_list = findViewById(R.id.Etapas_list);
 
 
@@ -84,7 +87,7 @@ public class SignUpActivity extends Activity {
         //String numMama = text13_2.getText().toString().trim();
 
 
-        String [] etapas = new String[]{
+        String[] etapas = new String[]{
                 "Amigo",
                 "Servidor",
                 "Solidario",
@@ -106,26 +109,8 @@ public class SignUpActivity extends Activity {
         });
 
         mAuth = FirebaseAuth.getInstance();
-
-        }
-
-
-    public void Abrircalendario(View view){
-            //Calendario de nacimiento
-        Calendar calendar = Calendar.getInstance();
-        int year = calendar.get(Calendar.YEAR);
-        int month = calendar.get(Calendar.MONTH);
-        int day = calendar.get(Calendar.DAY_OF_MONTH);
-
-        DatePickerDialog datePickerDialog = new DatePickerDialog(SignUpActivity.this, new DatePickerDialog.OnDateSetListener() {
-            @Override
-            public void onDateSet(DatePicker view, int year, int month, int day) {
-        String fecha = day+ "/"+ month+ "/"+year;
-        textF8.setText(fecha);
-            }
-        }, year, month, day);
-        datePickerDialog.show();
     }
+
     //Declaracion para la funcion de los espacios en blanco de correo, contraseña, etc...
     public void validate() {
         String email = textE1.getText().toString().trim();
@@ -185,5 +170,5 @@ public class SignUpActivity extends Activity {
         Intent intent = new Intent(SignUpActivity.this, LoginActivity.class);
         startActivity(intent);
     }
-
 }
+

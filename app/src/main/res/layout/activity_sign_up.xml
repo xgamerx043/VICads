@@ -85,14 +85,12 @@
                 app:hintTextColor="@color/black"
                 app:startIconContentDescription="contraseña"
                 app:startIconDrawable="@drawable/ic_lock">
-
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/textE3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
-
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textF4"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -169,19 +167,12 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textF8"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="30dp"
-                android:hint="Cumpleaños"
-                app:helperText="DD/MM/AA"
-                app:helperTextEnabled="true"
-                app:hintTextColor="@color/black"
-                app:startIconContentDescription="Cumpleaños"
-                app:startIconDrawable="@drawable/ic_calendar">
+                android:id="@+id/textF8"
+                android:hint="">
             </com.google.android.material.textfield.TextInputLayout>
-
             <EditText
                 android:id="@+id/textV8_2"
                 android:layout_width="match_parent"
